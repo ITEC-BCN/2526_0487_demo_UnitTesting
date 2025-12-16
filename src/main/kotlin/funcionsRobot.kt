@@ -59,10 +59,9 @@ fun dreta(pos: Array<Double>, vel: Double = 0.5): Array<Double> {
  */
 fun accelerar(vel: Double = 0.5): Double {
     var novaVel: Double = vel
-    if (novaVel < 10) novaVel += vel
-    else {
+    if (novaVel < 10.0) novaVel += 0.5
+    else
         println("Velocitat màxima (10.0) assolida, no es pot incrementar")
-    }
     return novaVel
 }
 
@@ -75,10 +74,9 @@ fun accelerar(vel: Double = 0.5): Double {
  */
 fun disminuir(vel: Double = 0.5): Double {
     var novaVel: Double = vel
-    if (novaVel > 0) novaVel -= vel
-    else {
+    if (novaVel > 0.0) novaVel -= 0.5
+    else
         println("Velocitat mínima (0.0) assolida, no es pot disminuïr")
-    }
     return novaVel
 }
 
