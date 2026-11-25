@@ -34,6 +34,8 @@ class FuncionsRobotKtTest {
         assertEquals(esperat, novaVelocitat)
     }
 
+
+
     @Test
     fun testAccelerarAlLimit() {
         val velocitatInicial = 9.5
